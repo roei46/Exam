@@ -88,7 +88,7 @@ class MainViewModel {
     }
     
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "Pantera", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "ZakkWylde", withExtension: "mp3") else { return }
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)

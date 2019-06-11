@@ -29,8 +29,8 @@ class MainViewController: UIViewController {
         
         getRandom()
         
-        //        viewModel.playSound()
-        //        playStopBtn.setTitle("Stop", for: .normal)
+        viewModel.playSound()
+        playStopBtn.setTitle("Stop", for: .normal)
     }
     
     func getRandom() {
