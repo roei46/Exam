@@ -20,6 +20,8 @@ class PreviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Preview"
+
         guard let url = self.url else { return }
 
         hud = MBProgressHUD.showAdded(to: self.imageView, animated: true)
@@ -30,12 +32,8 @@ class PreviewViewController: UIViewController {
     }
     
     @IBAction func shareAction(_ sender: Any) {
-        // image to share
         
-        // set up activity view controller
         let imageToShare = [ imageView.image ]
-        let items = ["This app is my favorite"]
-
         let ac = UIActivityViewController(activityItems: imageToShare as [Any], applicationActivities: nil)
         present(ac, animated: true)
         

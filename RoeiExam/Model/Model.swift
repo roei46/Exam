@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct GifDataRandom: Codable {
+    var data: Gif?
+}
+
 struct GifData: Codable {
     var data: [Gif]?
     var pagination: Pagination?

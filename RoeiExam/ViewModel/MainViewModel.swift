@@ -24,39 +24,35 @@ class MainViewModel {
     var nextPageUrl: Int?
     var textFromUser: String?
     
+    func getRandomData(succses: @escaping () -> Void, failure: @escaping () -> Void) {
+        self.networking.preformNetwokTask(endPoint: GiphyApi.random, type: GifDataRandom.self , complition: { [weak self] (response) in
+            if let result = response.data {
+                self?.gifs.append(result)
+                succses()
+            }
+        }) {
+            failure()
+        }
+    }
+    
     func getData(text: String, succses: @escaping () -> Void, failure: @escaping () -> Void) {
         if self.didCameFromSearch {
             self.resetResults()
         }
         self.networking.preformNetwokTask(endPoint: GiphyApi.search(text, nextPageUrl?.description ?? ""), type: GifData.self, complition: { [weak self] (response) in
-//            if self?.didCameFromSearch ?? false {
-//                self?.resetResults()
-//                if self?.textFromUser == nil {
-//                    self?.textFromUser = text
-//                }
-//
-//                if text == self?.textFromUser {
-//                    if self?.gifs.count ?? 0 <= self?.totalResult ?? 0 {
-//                        self?.updateModel(gifData: response, succses: {
-//                            succses()
-//                        })
-//                    }
-//                }
-//            } else {
-                if self?.textFromUser == nil {
-                    self?.textFromUser = text
+            if self?.textFromUser == nil {
+                self?.textFromUser = text
+            }
+            
+            if text == self?.textFromUser {
+                if self?.gifs.count ?? 0 <= self?.totalResult ?? 0 {
+                    self?.updateModel(gifData: response, succses: {
+                        succses()
+                    })
                 }
-                
-                if text == self?.textFromUser {
-                    if self?.gifs.count ?? 0 <= self?.totalResult ?? 0 {
-                        self?.updateModel(gifData: response, succses: {
-                            succses()
-                        })
-                    }
-                } else {
-                    self?.resetResults()
-                }
-//            }
+            } else {
+                self?.resetResults()
+            }
         }) {
             failure()
         }

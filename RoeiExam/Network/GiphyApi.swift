@@ -10,6 +10,7 @@ import Foundation
 
 enum GiphyApi {
     case search(String, String)
+    case random
 }
 
 extension GiphyApi: EndpointType {
@@ -22,6 +23,9 @@ extension GiphyApi: EndpointType {
         switch self {
         case .search(let text, let offset):
             return "search?q=\(text)&api_key=Zz7XnA0RZzJJetQAQv1e2c7ErivA9F5u&offset=\(offset)"
+        case .random:
+            return "random?&api_key=Zz7XnA0RZzJJetQAQv1e2c7ErivA9F5u"
         }
+        
     }
 }

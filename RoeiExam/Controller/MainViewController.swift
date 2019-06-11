@@ -19,15 +19,29 @@ class MainViewController: UIViewController {
     @IBOutlet weak var playStopBtn: UIButton!
     @IBOutlet weak var serachTextField: UITextField!
     
+    var isGettingRandom = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Welcome!!!"
         //Disabled cach to show gif in the preview VC
         SDImageCache.shared.config.shouldCacheImagesInMemory = false
         
-
-//        viewModel.playSound()
-//        playStopBtn.setTitle("Stop", for: .normal)
+        getRandom()
+        
+        //        viewModel.playSound()
+        //        playStopBtn.setTitle("Stop", for: .normal)
+    }
+    
+    func getRandom() {
+        SVProgressHUD.show()
+        isGettingRandom = true
+        viewModel.getRandomData(succses: {
+            SVProgressHUD.dismiss()
+            self.tableView.reloadData()
+        }) {
+            SVProgressHUD.dismiss()
+        }
     }
     
     @IBAction func playStopMusic(_ sender: Any) {
@@ -47,6 +61,7 @@ class MainViewController: UIViewController {
     
     func search() {
         SVProgressHUD.show()
+        self.isGettingRandom = false
         self.view.endEditing(true)
         guard let text = serachTextField.text else { return }
         let newText = text.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
@@ -62,7 +77,7 @@ class MainViewController: UIViewController {
             SVProgressHUD.dismiss()
         }
     }
-
+    
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
@@ -87,9 +102,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.count - 1 {
-            viewModel.didCameFromSearch = false
-            search()
+        if !isGettingRandom {
+            if indexPath.row == viewModel.count - 1 {
+                viewModel.didCameFromSearch = false
+                search()
+            }
         }
     }
     
