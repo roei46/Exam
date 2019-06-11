@@ -1,0 +1,6 @@
+framework module Pods_RoeiExam {
+  umbrella header "Pods-RoeiExam-umbrella.h"
+
+  export *
+  module * { export * }
+}

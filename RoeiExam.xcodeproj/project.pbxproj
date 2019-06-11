@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2159B6122AD3D9B0083C373 /* Pantera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2159B6022AD3D9B0083C373 /* Pantera.mp3 */; };
+		D2159B6322AD41890083C373 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2159B6222AD41890083C373 /* PreviewViewController.swift */; };
+		D256243E22A939A30025E507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256243D22A939A30025E507 /* AppDelegate.swift */; };
+		D256244022A939A30025E507 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256243F22A939A30025E507 /* MainViewController.swift */; };
+		D256244322A939A30025E507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D256244122A939A30025E507 /* Main.storyboard */; };
+		D256244622A939A30025E507 /* RoeiExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D256244422A939A30025E507 /* RoeiExam.xcdatamodeld */; };
+		D256244822A939A40025E507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D256244722A939A40025E507 /* Assets.xcassets */; };
+		D256244B22A939A40025E507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D256244922A939A40025E507 /* LaunchScreen.storyboard */; };
+		D256245622A939A40025E507 /* RoeiExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256245522A939A40025E507 /* RoeiExamTests.swift */; };
+		D256246122A939A40025E507 /* RoeiExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256246022A939A40025E507 /* RoeiExamUITests.swift */; };
+		D256247422A93E810025E507 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247322A93E810025E507 /* MainViewModel.swift */; };
+		D256247622A954600025E507 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247522A954600025E507 /* Model.swift */; };
+		D256247822A955500025E507 /* GiphyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247722A955500025E507 /* GiphyApi.swift */; };
+		D256247A22A955A70025E507 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247922A955A70025E507 /* EndpointType.swift */; };
+		D256247C22A9565B0025E507 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247B22A9565B0025E507 /* Networking.swift */; };
+		D256247E22A956AD0025E507 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256247D22A956AD0025E507 /* Response.swift */; };
+		D256248122A95C7D0025E507 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256248022A95C7D0025E507 /* UIImageViewExtension.swift */; };
+		D256248322AAECF30025E507 /* GifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256248222AAECF30025E507 /* GifTableViewCell.swift */; };
+		D256248522AAEE7D0025E507 /* GifTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256248422AAEE7D0025E507 /* GifTableViewCellModel.swift */; };
+		F7161585D7521ED4CB427FED /* Pods_RoeiExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE8395A474995A909A530A8 /* Pods_RoeiExam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D256245222A939A40025E507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D256243222A939A30025E507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D256243922A939A30025E507;
+			remoteInfo = RoeiExam;
+		};
+		D256245D22A939A40025E507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D256243222A939A30025E507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D256243922A939A30025E507;
+			remoteInfo = RoeiExam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AE8395A474995A909A530A8 /* Pods_RoeiExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoeiExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688AD60B9630CBE49E5F7194 /* Pods-RoeiExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoeiExam.release.xcconfig"; path = "Target Support Files/Pods-RoeiExam/Pods-RoeiExam.release.xcconfig"; sourceTree = "<group>"; };
+		7FB59C2324624F2B588A2852 /* Pods-RoeiExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoeiExam.debug.xcconfig"; path = "Target Support Files/Pods-RoeiExam/Pods-RoeiExam.debug.xcconfig"; sourceTree = "<group>"; };
+		D2159B6022AD3D9B0083C373 /* Pantera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pantera.mp3; sourceTree = "<group>"; };
+		D2159B6222AD41890083C373 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		D256243A22A939A30025E507 /* RoeiExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoeiExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D256243D22A939A30025E507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D256243F22A939A30025E507 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D256244222A939A30025E507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D256244522A939A30025E507 /* RoeiExam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoeiExam.xcdatamodel; sourceTree = "<group>"; };
+		D256244722A939A40025E507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D256244A22A939A40025E507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D256244C22A939A40025E507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D256245122A939A40025E507 /* RoeiExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoeiExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D256245522A939A40025E507 /* RoeiExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoeiExamTests.swift; sourceTree = "<group>"; };
+		D256245722A939A40025E507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D256245C22A939A40025E507 /* RoeiExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoeiExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D256246022A939A40025E507 /* RoeiExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoeiExamUITests.swift; sourceTree = "<group>"; };
+		D256246222A939A40025E507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D256247322A93E810025E507 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D256247522A954600025E507 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D256247722A955500025E507 /* GiphyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyApi.swift; sourceTree = "<group>"; };
+		D256247922A955A70025E507 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		D256247B22A9565B0025E507 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D256247D22A956AD0025E507 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D256248022A95C7D0025E507 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		D256248222AAECF30025E507 /* GifTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCell.swift; sourceTree = "<group>"; };
+		D256248422AAEE7D0025E507 /* GifTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCellModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D256243722A939A30025E507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7161585D7521ED4CB427FED /* Pods_RoeiExam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256244E22A939A40025E507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256245922A939A40025E507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C8FDE851E51404CB6EEE67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FB59C2324624F2B588A2852 /* Pods-RoeiExam.debug.xcconfig */,
+				688AD60B9630CBE49E5F7194 /* Pods-RoeiExam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2792F0E6C83C6C0635FB5F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AE8395A474995A909A530A8 /* Pods_RoeiExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D256243122A939A30025E507 = {
+			isa = PBXGroup;
+			children = (
+				D256243C22A939A30025E507 /* RoeiExam */,
+				D256245422A939A40025E507 /* RoeiExamTests */,
+				D256245F22A939A40025E507 /* RoeiExamUITests */,
+				D256243B22A939A30025E507 /* Products */,
+				03C8FDE851E51404CB6EEE67 /* Pods */,
+				A2792F0E6C83C6C0635FB5F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D256243B22A939A30025E507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D256243A22A939A30025E507 /* RoeiExam.app */,
+				D256245122A939A40025E507 /* RoeiExamTests.xctest */,
+				D256245C22A939A40025E507 /* RoeiExamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D256243C22A939A30025E507 /* RoeiExam */ = {
+			isa = PBXGroup;
+			children = (
+				D256243D22A939A30025E507 /* AppDelegate.swift */,
+				D256247F22A95C260025E507 /* Extension */,
+				D256247022A93B280025E507 /* ViewModel */,
+				D256247222A93B400025E507 /* Network */,
+				D256247122A93B360025E507 /* Model */,
+				D256246F22A93B1A0025E507 /* View */,
+				D256246E22A93AFB0025E507 /* Controller */,
+				D256244122A939A30025E507 /* Main.storyboard */,
+				D2159B6022AD3D9B0083C373 /* Pantera.mp3 */,
+				D256244722A939A40025E507 /* Assets.xcassets */,
+				D256244922A939A40025E507 /* LaunchScreen.storyboard */,
+				D256244C22A939A40025E507 /* Info.plist */,
+				D256244422A939A30025E507 /* RoeiExam.xcdatamodeld */,
+			);
+			path = RoeiExam;
+			sourceTree = "<group>";
+		};
+		D256245422A939A40025E507 /* RoeiExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				D256245522A939A40025E507 /* RoeiExamTests.swift */,
+				D256245722A939A40025E507 /* Info.plist */,
+			);
+			path = RoeiExamTests;
+			sourceTree = "<group>";
+		};
+		D256245F22A939A40025E507 /* RoeiExamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D256246022A939A40025E507 /* RoeiExamUITests.swift */,
+				D256246222A939A40025E507 /* Info.plist */,
+			);
+			path = RoeiExamUITests;
+			sourceTree = "<group>";
+		};
+		D256246E22A93AFB0025E507 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D256243F22A939A30025E507 /* MainViewController.swift */,
+				D2159B6222AD41890083C373 /* PreviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D256246F22A93B1A0025E507 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D256248222AAECF30025E507 /* GifTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D256247022A93B280025E507 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D256247322A93E810025E507 /* MainViewModel.swift */,
+				D256248422AAEE7D0025E507 /* GifTableViewCellModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D256247122A93B360025E507 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D256247522A954600025E507 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D256247222A93B400025E507 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D256247722A955500025E507 /* GiphyApi.swift */,
+				D256247922A955A70025E507 /* EndpointType.swift */,
+				D256247B22A9565B0025E507 /* Networking.swift */,
+				D256247D22A956AD0025E507 /* Response.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D256247F22A95C260025E507 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D256248022A95C7D0025E507 /* UIImageViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D256243922A939A30025E507 /* RoeiExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D256246522A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExam" */;
+			buildPhases = (
+				C66749FFCA993121AABC860A /* [CP] Check Pods Manifest.lock */,
+				D256243622A939A30025E507 /* Sources */,
+				D256243722A939A30025E507 /* Frameworks */,
+				D256243822A939A30025E507 /* Resources */,
+				7CC0CF55C43F106AEB2E8016 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoeiExam;
+			productName = RoeiExam;
+			productReference = D256243A22A939A30025E507 /* RoeiExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D256245022A939A40025E507 /* RoeiExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D256246822A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExamTests" */;
+			buildPhases = (
+				D256244D22A939A40025E507 /* Sources */,
+				D256244E22A939A40025E507 /* Frameworks */,
+				D256244F22A939A40025E507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D256245322A939A40025E507 /* PBXTargetDependency */,
+			);
+			name = RoeiExamTests;
+			productName = RoeiExamTests;
+			productReference = D256245122A939A40025E507 /* RoeiExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D256245B22A939A40025E507 /* RoeiExamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D256246B22A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExamUITests" */;
+			buildPhases = (
+				D256245822A939A40025E507 /* Sources */,
+				D256245922A939A40025E507 /* Frameworks */,
+				D256245A22A939A40025E507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D256245E22A939A40025E507 /* PBXTargetDependency */,
+			);
+			name = RoeiExamUITests;
+			productName = RoeiExamUITests;
+			productReference = D256245C22A939A40025E507 /* RoeiExamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D256243222A939A30025E507 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "roei baruch";
+				TargetAttributes = {
+					D256243922A939A30025E507 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D256245022A939A40025E507 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D256243922A939A30025E507;
+					};
+					D256245B22A939A40025E507 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D256243922A939A30025E507;
+					};
+				};
+			};
+			buildConfigurationList = D256243522A939A30025E507 /* Build configuration list for PBXProject "RoeiExam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D256243122A939A30025E507;
+			productRefGroup = D256243B22A939A30025E507 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D256243922A939A30025E507 /* RoeiExam */,
+				D256245022A939A40025E507 /* RoeiExamTests */,
+				D256245B22A939A40025E507 /* RoeiExamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D256243822A939A30025E507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2159B6122AD3D9B0083C373 /* Pantera.mp3 in Resources */,
+				D256244B22A939A40025E507 /* LaunchScreen.storyboard in Resources */,
+				D256244822A939A40025E507 /* Assets.xcassets in Resources */,
+				D256244322A939A30025E507 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256244F22A939A40025E507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256245A22A939A40025E507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CC0CF55C43F106AEB2E8016 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoeiExam/Pods-RoeiExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoeiExam/Pods-RoeiExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoeiExam/Pods-RoeiExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66749FFCA993121AABC860A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoeiExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D256243622A939A30025E507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D256248122A95C7D0025E507 /* UIImageViewExtension.swift in Sources */,
+				D256247A22A955A70025E507 /* EndpointType.swift in Sources */,
+				D256247622A954600025E507 /* Model.swift in Sources */,
+				D256244022A939A30025E507 /* MainViewController.swift in Sources */,
+				D256248522AAEE7D0025E507 /* GifTableViewCellModel.swift in Sources */,
+				D256247C22A9565B0025E507 /* Networking.swift in Sources */,
+				D256247E22A956AD0025E507 /* Response.swift in Sources */,
+				D256247822A955500025E507 /* GiphyApi.swift in Sources */,
+				D256244622A939A30025E507 /* RoeiExam.xcdatamodeld in Sources */,
+				D256243E22A939A30025E507 /* AppDelegate.swift in Sources */,
+				D256247422A93E810025E507 /* MainViewModel.swift in Sources */,
+				D2159B6322AD41890083C373 /* PreviewViewController.swift in Sources */,
+				D256248322AAECF30025E507 /* GifTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256244D22A939A40025E507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D256245622A939A40025E507 /* RoeiExamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D256245822A939A40025E507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D256246122A939A40025E507 /* RoeiExamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D256245322A939A40025E507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D256243922A939A30025E507 /* RoeiExam */;
+			targetProxy = D256245222A939A40025E507 /* PBXContainerItemProxy */;
+		};
+		D256245E22A939A40025E507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D256243922A939A30025E507 /* RoeiExam */;
+			targetProxy = D256245D22A939A40025E507 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D256244122A939A30025E507 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D256244222A939A30025E507 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D256244922A939A40025E507 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D256244A22A939A40025E507 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D256246322A939A40025E507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D256246422A939A40025E507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D256246622A939A40025E507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB59C2324624F2B588A2852 /* Pods-RoeiExam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D256246722A939A40025E507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 688AD60B9630CBE49E5F7194 /* Pods-RoeiExam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D256246922A939A40025E507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoeiExam.app/RoeiExam";
+			};
+			name = Debug;
+		};
+		D256246A22A939A40025E507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoeiExam.app/RoeiExam";
+			};
+			name = Release;
+		};
+		D256246C22A939A40025E507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoeiExam;
+			};
+			name = Debug;
+		};
+		D256246D22A939A40025E507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY33DFS879;
+				INFOPLIST_FILE = RoeiExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Me.RoeiExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoeiExam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D256243522A939A30025E507 /* Build configuration list for PBXProject "RoeiExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D256246322A939A40025E507 /* Debug */,
+				D256246422A939A40025E507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D256246522A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D256246622A939A40025E507 /* Debug */,
+				D256246722A939A40025E507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D256246822A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D256246922A939A40025E507 /* Debug */,
+				D256246A22A939A40025E507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D256246B22A939A40025E507 /* Build configuration list for PBXNativeTarget "RoeiExamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D256246C22A939A40025E507 /* Debug */,
+				D256246D22A939A40025E507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D256244422A939A30025E507 /* RoeiExam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D256244522A939A30025E507 /* RoeiExam.xcdatamodel */,
+			);
+			currentVersion = D256244522A939A30025E507 /* RoeiExam.xcdatamodel */;
+			path = RoeiExam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D256243222A939A30025E507 /* Project object */;
+}
